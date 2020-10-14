@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #330e25;
+    padding-top: 1rem;
+}
+
+
+/* ---------------------header--------------------------------------------- */
+#header{
+    display: block;
+    background-color: #5a1842;
+    color: #ceccc7;
+    padding: 1.5rem;
+    border-radius: 15px;
+    margin-bottom: 1rem;
+    font-family: 'Sansita Swashed', cursive;
+}
+
+header h1{
+	/* text-align: center; */
+	color: #ddbad0;
+	font-family: 'Niconne', cursive;
+	font-weight: 700;
+    text-shadow: 2px 2px 0px #ca92b5, 
+                  4px 4px 0px #ac6291, 
+                  6px 6px 0px #914977, 
+                  8px 8px 0px #7a2e5f, 
+                  10px 10px 0px #661f4c;
+}
+
+
+
+/* ---------------------main part------------------------------------------------- */
+main{
+    height: 60vh;
+    padding-top: 2rem;
+}
+
+
+#calc-container button{
+    width: 3rem !important;
+    height: 3rem !important;
+    text-align: center;
+    background-color: transparent;
+    border: 1px #973c82 solid;
+    margin: .1rem;
+    color: #fdc5e9;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #973c82;
+    outline: none;
+}
+
+#calc-container button:focus { outline:0 ; }
+
+#calc-container button:hover{
+    background-color: #491535a8;
+    cursor: pointer;
+    box-shadow: 0 0 12px #973c82;
+}
+
+.backspace{
+    margin-right: 3.3rem !important;
+    font-size: .8rem;
+}
+
+#calc-container .wide{
+    width: 3.5rem !important;
+}
+
+#result{
+    height: 4rem;
+    width: 16.5rem;
+    background-color: #8334714b;
+    margin-bottom: .5rem;
+    border-radius: 5px;
+    box-shadow: 0 0 15px #973c82;
+    outline: none;
+    border: none;
+    line-height: 4rem;
+    color: #fdc5e9;
+    padding: 0 1rem;
+    font-size: larger;
+
+}
+
+
+
+
+/* --------------------footer----------------------------------------------- */
+.footer{
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    background-color: #8334714b;
+    padding: .6rem;
+    color: #e6cddd;
+}
+
+.footer button{
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 50%;
+    border: none;
+    margin-right: .2rem;
+    background-color: transparent;
+    border: 1px #973c827a solid;
+    color: #fdc5e9;
+    box-shadow: 0 0 2px #973c82;
+
+}
+
+.footer button i{
+    color: whitesmoke;
+}
