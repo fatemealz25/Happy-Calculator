@@ -38,13 +38,13 @@ header h1{
 /* ---------------------main part------------------------------------------------- */
 main{
     height: 60vh;
-    padding-top: 2rem;
+    padding-top: 1rem;
 }
 
 
 #calc-container button{
-    width: 3rem !important;
-    height: 3rem !important;
+    width: 3.5rem !important;
+    height: 3.2rem !important;
     text-align: center;
     background-color: transparent;
     border: 1px #973c82 solid;
@@ -53,28 +53,43 @@ main{
     border-radius: 5px;
     box-shadow: 0 0 5px #973c82;
     outline: none;
+    font-size: 1rem;
+    /* font-family: 'Lobster', cursive; */
+    font-family: 'Fredoka One', cursive;
 }
 
 #calc-container button:focus { outline:0 ; }
 
 #calc-container button:hover{
+    font-size: 1.35rem !important;
     background-color: #491535a8;
     cursor: pointer;
     box-shadow: 0 0 12px #973c82;
 }
 
-.backspace{
-    margin-right: 3.3rem !important;
+#calc-container .wider{
+    font-size: 1.2rem !important;
+    width: 7.6rem !important;
     font-size: .8rem;
+}
+#calc-container .wider:hover{
+    font-size: 1.5rem !important;
+    background-color: #3f7750;
+    box-shadow: 0 0 12px #3bb664a8;
 }
 
 #calc-container .wide{
-    width: 3.5rem !important;
+    width: 3.8rem !important;
+}
+
+/* making numbers a bit bolder */
+#calc-container .bold{
+    font-size: 1.2rem;
 }
 
 #result{
-    height: 4rem;
-    width: 16.5rem;
+    height: 4.5rem;
+    width: 19.2rem;
     background-color: #8334714b;
     margin-bottom: .5rem;
     border-radius: 5px;
@@ -100,6 +115,8 @@ main{
     background-color: #8334714b;
     padding: .6rem;
     color: #e6cddd;
+    font-family: 'Fredoka One', cursive;
+
 }
 
 .footer button{
@@ -113,6 +130,11 @@ main{
     color: #fdc5e9;
     box-shadow: 0 0 2px #973c82;
 
+}
+
+.footer button:hover{
+    box-shadow: 0 0 12px #973c82;
+    cursor: pointer;
 }
 
 .footer button i{

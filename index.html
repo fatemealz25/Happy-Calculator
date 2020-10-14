@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="icon" href="https://www.google.com/s2/favicons?domain=happy-todo.surge.sh/index.html">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
     <link rel="canonical" href="https://getbootstrap.com/docs/4.1/examples/sticky-footer/">
     <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
+    <title>Happy Calculator</title>
 </head>
 <body>
     
@@ -29,42 +32,42 @@
             </div>
 
             <div class="row justify-content-center">
-                <button class="col-auto" id="clear">c</button>
-                <button class="col-auto backspace" id="back"><i class="fas fa-backspace"></i></button>
-                <button class="col-auto" value="divide">/</button>
+                <button class="col-auto bold" id="clear">c</button>
+                <button class="col-auto" id="back"><i class="fas fa-backspace"></i></button>
+                <button class="col-auto" value="%"><i class="fas fa-percent"></i></button>
+                <button class="col-auto" value="divide"><i class="fas fa-divide"></i></button>
                 <button class="col-auto wide" value="sin">sin</button>
             </div>
 
             <div class="row justify-content-center">
-                <button class="col-auto" id="num1" value="1">1</button>
-                <button class="col-auto" id="num2" value="2">2</button>
-                <button class="col-auto" id="num3" value="3">3</button>
-                <button class="col-auto" value="plus">+</button>
+                <button class="col-auto bold" id="num1" value="1">1</button>
+                <button class="col-auto bold" id="num2" value="2">2</button>
+                <button class="col-auto bold" id="num3" value="3">3</button>
+                <button class="col-auto" value="plus"><i class="fas fa-plus"></i></button>
                 <button class="col-auto wide" value="cos">cos</button>
             </div>
     
             <div class="row justify-content-center">
-                <button class="col-auto" id="num4" value="4">4</button>
-                <button class="col-auto" id="num5" value="5">5</button>
-                <button class="col-auto" id="num6" value="6">6</button>
-                <button class="col-auto" value="minus">-</button>
+                <button class="col-auto bold" id="num4" value="4">4</button>
+                <button class="col-auto bold" id="num5" value="5">5</button>
+                <button class="col-auto bold" id="num6" value="6">6</button>
+                <button class="col-auto" value="minus"><i class="fas fa-minus"></i></button>
                 <button class="col-auto wide" value="tan">tan</button>
             </div>
     
             <div class="row justify-content-center">
-                <button class="col-auto" id="num7" value="7">7</button>
-                <button class="col-auto" id="num8" value="8">8</button>
-                <button class="col-auto" id="num9" value="9">9</button>
-                <button class="col-auto" value="mult">*</button>
+                <button class="col-auto bold" id="num7" value="7">7</button>
+                <button class="col-auto bold" id="num8" value="8">8</button>
+                <button class="col-auto bold" id="num9" value="9">9</button>
+                <button class="col-auto" value="mult"><i class="fas fa-times"></i></button>
                 <button class="col-auto wide" value="cot">cot</button>
             </div>
 
             <div class="row justify-content-center">
                 <button class="col-auto" value="log">log</button>
-                <button class="col-auto" id="num0" value="0">0</button>
-                <button class="col-auto" id="point" value=".">.</button>
-                <button class="col-auto" value="%">%</button>
-                <button class="col-auto wide" value="=">=</button>
+                <button class="col-auto bold" id="num0" value="0">0</button>
+                <button class="col-auto bold" id="point" value=".">.</button>
+                <button class="col-auto wider" value="=">=</button>
             </div>
         </div>
     </main>
