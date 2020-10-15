@@ -87,9 +87,17 @@ divideEl.addEventListener('click' , e=>{
     resultEl.innerHTML = '<i class="fas fa-divide"></i>'
 })
 modEl.addEventListener('click' , e=>{
-    number1 = resultEl.innerText
-    operator = 'mod'
-    resultEl.innerHTML = `${number1 / 100}%`
+
+    number = resultEl.innerText
+    resultEl.innerHTML = `${number / 100}`
+
+    if(number != number1){
+        number2 = number / 100
+    }else{
+        number1 = number / 100
+    }
+
+
 })
 logEl.addEventListener('click' , e=>{
     number1 = resultEl.innerText
@@ -140,6 +148,8 @@ equalEl.addEventListener('click' , e=>{
     }else if(operator == 'mult'){
 
         number2 = resultEl.innerText
+        console.log(number1)
+        console.log(number2)
         result = parseFloat(number1) * parseFloat(number2)
         resultEl.innerHTML = result
 
