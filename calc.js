@@ -96,27 +96,29 @@ modEl.addEventListener('click' , e=>{
 logEl.addEventListener('click' , e=>{
     number1 = resultEl.innerText
     operator = 'log'
-    resultEl.innerHTML = `log(${number1})`
+    resultEl.innerHTML = `log(${number1}`
 })
 sinEl.addEventListener('click' , e=>{
     number1 = resultEl.innerText
+    console.log(`number1 : ${number1}`)
     operator = 'sin'
-    resultEl.innerHTML = `sin(${number1})`
+    resultEl.innerHTML = `sin(${number1}`
+    console.log(resultEl.innerHTML)
 })
 cosEl.addEventListener('click' , e=>{
     number1 = resultEl.innerText
     operator = 'cos'
-    resultEl.innerHTML = `cos(${number1})`
+    resultEl.innerHTML = `cos(${number1}`
 })
 tanEl.addEventListener('click' , e=>{
     number1 = resultEl.innerText
     operator = 'tan'
-    resultEl.innerHTML = `tan(${number1})`
+    resultEl.innerHTML = `tan(${number1}`
 })
 cotEl.addEventListener('click' , e=>{
     number1 = resultEl.innerText
     operator = 'cot'
-    resultEl.innerHTML = `cot(${number1})`
+    resultEl.innerHTML = `cot(${number1}`
 })
 
 
@@ -157,29 +159,50 @@ equalEl.addEventListener('click' , e=>{
 
     }else if(operator == 'sin'){
 
+        if (!number1){
+            currentText = resultEl.innerText
+            number1 = currentText.slice(4)
+        }
         radian = toRadian(parseFloat(number1))
         result = Math.sin(radian).toFixed(10)
         resultEl.innerHTML = result
 
     }else if(operator == 'cos'){
 
+        if (!number1){
+            currentText = resultEl.innerText
+            number1 = currentText.slice(4)
+        }
         radian = toRadian(parseFloat(number1))
         result = Math.cos(radian).toFixed(10)
         resultEl.innerHTML = result
 
     }else if(operator == 'tan'){
 
+        if (!number1){
+            currentText = resultEl.innerText
+            number1 = currentText.slice(4)
+        }
         radian = toRadian(parseFloat(number1))
         result = Math.tan(radian).toFixed(10)
         resultEl.innerHTML = result
 
     }else if(operator == 'cot'){
 
+        if (!number1){
+            currentText = resultEl.innerText
+            number1 = currentText.slice(4)
+        }
         radian = toRadian(parseFloat(number1))
         result = cot(radian).toFixed(10)
         resultEl.innerHTML = result
 
     }else if(operator == 'log'){
+
+        if (!number1){
+            currentText = resultEl.innerText
+            number1 = currentText.slice(4)
+        }
 
         result = Math.log10(number1).toFixed(10)
         resultEl.innerHTML = result
