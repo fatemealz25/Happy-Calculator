@@ -29,15 +29,13 @@ const cot = (x)=>{
 }
 
 
-
-
-
 // ---- add numbers to result element ----
 for (let i = 0; i < 10; i++) {
 
     document.querySelector(`#num${i}`).addEventListener('click' , e =>{
         // console.log(e.target.value)
         let currentText = resultEl.innerText
+        console.log(currentText)
         resultEl.innerHTML = currentText + e.target.value
     })
 }

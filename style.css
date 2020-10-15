@@ -11,18 +11,14 @@ body{
 
 
 /* ---------------------header--------------------------------------------- */
-#header{
-    display: block;
+header{
     background-color: #5a1842;
-    color: #ceccc7;
     padding: 1.5rem;
     border-radius: 15px;
     margin-bottom: 1rem;
-    font-family: 'Sansita Swashed', cursive;
 }
 
 header h1{
-	/* text-align: center; */
 	color: #ddbad0;
 	font-family: 'Niconne', cursive;
 	font-weight: 700;
@@ -37,11 +33,10 @@ header h1{
 
 /* ---------------------main part------------------------------------------------- */
 main{
-    height: 60vh;
+    min-height: 60vh;
     padding-top: 1rem;
     max-width: 100vw;
 }
-
 
 #calc-container button{
     width: 3.5rem !important;
@@ -49,12 +44,10 @@ main{
     text-align: center;
     background-color: transparent;
     border: 1px #973c82 solid;
-    margin: .1rem;
+    margin: .15rem;
     color: #fdc5e9;
     border-radius: 5px;
-    box-shadow: 0 0 5px #973c82;
-    outline: none;
-    font-size: 1rem;
+    box-shadow: 0 0 3px #973c82;
     font-family: 'Fredoka One', cursive;
 }
 
@@ -69,38 +62,38 @@ main{
 
 #calc-container .wider{
     font-size: 1.2rem !important;
-    width: 7.6rem !important;
-    font-size: .8rem;
+    width: 7.8rem !important;
 }
 #calc-container .wider:hover{
-    font-size: 1.5rem !important;
+    font-size: 1.7rem !important;
     background-color: #3f7750;
-    box-shadow: 0 0 12px #3bb664a8;
 }
 
 #calc-container .wide{
-    width: 3.8rem !important;
+    width: 4rem !important;
 }
 
 /* making numbers a bit bolder */
 #calc-container .bold{
     font-size: 1.2rem;
 }
+#calc-container .bold:hover{
+    font-size: 1.7rem !important;
+}
+
 
 #result{
     height: 4.5rem;
-    width: 19.2rem;
+    line-height: 4.5rem;
+    width: 20rem;
     background-color: #8334714b;
     margin-bottom: .5rem;
     border-radius: 5px;
-    box-shadow: 0 0 15px #973c82;
-    outline: none;
-    border: none;
-    line-height: 4rem;
+    box-shadow: 0 0 14px #973c82;
     color: #fdc5e9;
     padding: 0 1rem;
-    font-size: larger;
-
+    font-size: 1.4rem;
+    font-family: 'Fredoka One', cursive;
 }
 
 
@@ -116,15 +109,13 @@ main{
     padding: .6rem;
     color: #e6cddd;
     font-family: 'Fredoka One', cursive;
-
 }
 
 .footer button{
     width: 2.2rem;
     height: 2.2rem;
-    border-radius: 50%;
-    border: none;
-    margin-right: .2rem;
+    border-radius: 40%;
+    margin-right: .3rem;
     background-color: transparent;
     border: 1px #973c827a solid;
     color: #fdc5e9;
